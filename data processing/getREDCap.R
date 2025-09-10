@@ -89,7 +89,6 @@ data_selected <- data |>
 
 # Save dataset
 write.csv(data_selected, "/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_data.csv")
-write.csv(data_selected, "../redcap_data.csv")
 
 print("data uploaded")
 
