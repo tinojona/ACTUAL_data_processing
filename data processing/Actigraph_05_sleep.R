@@ -14,10 +14,10 @@ rm(list = ls())
 library(lubridate);library(readr);library(tidyverse)
 
 # specify the week to compile (needs to match naming convention on synology)
-week_indicator = "week_3"
+week_indicator = "week_4"
 
 # load redcap from CCH for uids and start and end times
-redcap = read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_all.csv") |> 
+redcap = read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_all.csv", show_col_types = F) |> 
   filter(str_detect(redcap_event_name, week_indicator)) |>
   filter(!(uid %in% c("ACT029U", "ACT034X", "ACT045O", "ACT048L", "ACT051G", "ACT060E"))) |>
   filter(str_starts(uid, "ACT")) 
@@ -44,6 +44,16 @@ for(uidx in uids){
   
   print(uidx)
   
+  # first: only one RAW file
+  # data directory with RAW files
+  datadir = paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data-raw/Actigraph/participants/", week_indicator, "/", uidx, "/") 
+  
+  # check if two RAW file exists, otherwise skip
+  rawfile <- list.files(datadir, pattern = "\\)RAW.csv$", full.names = TRUE)
+  
+  if (length(rawfile) == 1) {
+    print("1 RAW file")
+  
   # list the files of the folder in which the sleep summary is located
   files_uid <- list.files(paste0(filepath_part, uidx, "/RAW_processed/output_", uidx, "/results/"))
   
@@ -53,12 +63,49 @@ for(uidx in uids){
   if (length(file_sleep) != 0) {
     
     # load weartime validation and cut by observation period
-    sleep <- read_csv(paste0(filepath_part, uidx, "/RAW_processed/output_", uidx, "/results/", file_sleep)) |>
-      mutate(uid = uidx)
+    sleep <- read_csv(paste0(filepath_part, uidx, "/RAW_processed/output_", uidx, "/results/", file_sleep), show_col_types = F) |>
+      mutate(uid = uidx,
+             calendar_date = as.Date(calendar_date))
     
       
-    df_sleep <- rbind(df_sleep, sleep)
+    df_sleep <- bind_rows(df_sleep, sleep)
     }
+  }
+  if (length(rawfile) == 2) {
+    print("2 RAW file")
+    
+    # list the files of the folder in which the sleep summary is located
+    files_uid <- list.files(paste0(filepath_part, uidx, "/GGIR_1/RAW_processed/output_GGIR_1/results/"))
+    
+    # get the file
+    file_sleep <- files_uid[grepl("4_night", files_uid)]
+    
+    if (length(file_sleep) != 0) {
+      
+      # load weartime validation and cut by observation period
+      sleep <- read_csv(paste0(filepath_part, uidx, "/GGIR_1/RAW_processed/output_GGIR_1/results/", file_sleep), show_col_types = F) |>
+        mutate(uid = uidx)
+      
+      
+      df_sleep <- bind_rows(df_sleep, sleep)
+    }
+    
+    # list the files of the folder in which the sleep summary is located
+    files_uid <- list.files(paste0(filepath_part, uidx, "/GGIR_2/RAW_processed/output_GGIR_2/results/"))
+    
+    # get the file
+    file_sleep <- files_uid[grepl("4_night", files_uid)]
+    
+    if (length(file_sleep) != 0) {
+      
+      # load weartime validation and cut by observation period
+      sleep <- read_csv(paste0(filepath_part, uidx,"/GGIR_2/RAW_processed/output_GGIR_2/results/", file_sleep), show_col_types = F) |>
+        mutate(uid = uidx)
+      
+      
+      df_sleep <- bind_rows(df_sleep, sleep)
+    }
+  }
 }
 
 

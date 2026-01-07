@@ -15,10 +15,10 @@ rm(list = ls())
 library(lubridate);library(readr);library(tidyverse)
 
 # specify the week to compile (needs to match naming convention on synology)
-week_indicator = "week_1"
+week_indicator = "week_4"
 
 # load redcap from CCH for uids and start and end times
-redcap = read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_all.csv") |> 
+redcap = read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_all.csv", show_col_types = F) |> 
   select(uid, redcap_event_name, pvl_start, pvl_end, starts_with("pvl_ac")) |>
   drop_na(pvl_start) |>
   filter(str_detect(redcap_event_name, week_indicator)) |>
@@ -41,16 +41,9 @@ df_STEPS <- data.frame()
 df_Temp <- data.frame()
 df_WT <- data.frame()
 
-# dummy participant for script dev
-# redcap <- redcap |>
-#   filter(str_starts(uid, "ACT044"))
-# redcap <- redcap |>
-#   filter(str_starts(uid, "ACT00"))
-# uids <- unique(redcap$uid)
-
 
 # loop over all participants
-for(uidx in uids){
+for(uidx in uids[30:72]){
   
   print(uidx)
   
@@ -72,7 +65,7 @@ for(uidx in uids){
   if (length(file_WTvalidation) != 0) {
     
     # load weartime validation and cut by observation period
-    wt <- read_csv(paste0(filepath_part, uidx, "/", file_WTvalidation)) |>
+    wt <- read_csv(paste0(filepath_part, uidx, "/", file_WTvalidation), show_col_types = F) |>
       filter(datetime >= min(redcap_uid$pvl_end) & datetime <= max(redcap_uid$pvl_start))
     
     # set weartime manually to NO WT when there was a pvl
@@ -100,7 +93,7 @@ for(uidx in uids){
   # rbind the files if they exist and
   # cleaning based on weartime validation
   if(length(file_CR) != 0){
-    data = read_csv(paste0(filepath_part, uidx, "/", file_CR))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_CR), show_col_types = F)
     
     if (nrow(data) != 0) {
     
@@ -118,7 +111,7 @@ for(uidx in uids){
     }
   }
   if(length(file_HR) != 0){
-    data = read_csv(paste0(filepath_part, uidx, "/", file_HR))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_HR), show_col_types = F)
     
     if (nrow(data) != 0) {
       
@@ -132,7 +125,7 @@ for(uidx in uids){
   }
   }
   if(length(file_HRV) != 0){
-    data = read_csv(paste0(filepath_part, uidx, "/", file_HRV))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_HRV), show_col_types = F)
     
     if (nrow(data) != 0) {
   
@@ -162,7 +155,7 @@ for(uidx in uids){
     }
   }
   if(length(file_IBI) != 0){
-    data = read_csv(paste0(filepath_part, uidx, "/", file_IBI))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_IBI), show_col_types = F)
     
     if (nrow(data) != 0) {
       
@@ -178,7 +171,7 @@ for(uidx in uids){
     
   if(length(file_STEPS) != 0){
     
-    data = read_csv(paste0(filepath_part, uidx, "/", file_STEPS))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_STEPS), show_col_types = F)
     
     if(nrow(data) != 0){
     
@@ -193,7 +186,11 @@ for(uidx in uids){
   }
   if(length(file_Temp) != 0){
     
-    data = read_csv(paste0(filepath_part, uidx, "/", file_Temp))
+    data = read_csv(paste0(filepath_part, uidx, "/", file_Temp), show_col_types = F) #, skip = 20) |>
+      # dplyr::select(-Timestamp)
+    # colnames(data)[1:3] <- c("Temperature", "datetime", "uid")
+    # data <- data |>
+      # mutate(datetime = floor_date(datetime, unit = "minute"))
     
     if(nrow(data) != 0){
       
