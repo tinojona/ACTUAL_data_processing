@@ -53,11 +53,12 @@ noise_data_hourly <- data.frame()
 noise_data_daily <- data.frame()
 noise_data_weekly <- data.frame()
 
-
-
+# save plots 
+plots <- list()
 
 # cleaning routine
 for(uidx in uids){
+  # browser()
   
   print(uidx)
   
@@ -94,6 +95,7 @@ for(uidx in uids){
   
   # check if data availability is >= 90%
   NA_perc = mean(is.na(data_N_uid$NS))
+  cat("Percentage missing values (weekly):", print(NA_perc), "\n") 
   
   # and exclude the participant if it is not the case
   if(NA_perc > .1 | is.na(NA_perc)){
@@ -105,15 +107,40 @@ for(uidx in uids){
   mean_noise = mean(data_N_uid$NS, na.rm = TRUE)
   sd_noise = sd(data_N_uid$NS, na.rm = TRUE) * 3
 
+  #   Report the number of dropped observations for each time series.
+  drop_idx <- data_N_uid$NS > mean_noise + sd_noise |
+    data_N_uid$NS < mean_noise - sd_noise
+  cat("Dropped observations:", sum(drop_idx, na.rm = TRUE), "\n")
+  
+  # plot time series
+  data_N_uid$drop <- drop_idx
+  plot_outliers <- 
+    ggplot(data_N_uid,
+         aes(x=datetime, y=NS))+
+    geom_point() + geom_line()+
+    geom_point(data=data_N_uid[data_N_uid$drop==T,], col="red")+
+    xlab(paste("Date (", uidx, ")")) +
+    theme_classic()
+  plots[[uidx]] <- plot_outliers
+  data_N_uid$drop <- NULL
+  
   data_N_uid <- data_N_uid |>
     mutate(NS = ifelse(NS > mean_noise + sd_noise | NS < mean_noise - sd_noise, NA, NS))
+  
+  
+  # check if data availability is >= 90% after removing outliers
+  NA_perc = mean(is.na(data_N_uid$NS))
+  cat("Percentage missing values (weekly) after removing outliers:", print(NA_perc), "\n") 
+  
+  # and exclude the participant if it is not the case
+  if(NA_perc > .1 | is.na(NA_perc)){
+    next
+  }
   
   # calculate hourly, daily, and weekly noise indicators
   
   # total
   L_Aeq_tot = 10 * log10( mean(10^(0.1 * data_N_uid$NS), na.rm = TRUE ) ) 
-  
-  
   
   # hourly
   noise_ind_hourly <- data_N_uid |>
@@ -124,9 +151,6 @@ for(uidx in uids){
               .groups = "drop") |>
 
     mutate(uid = uidx)
-  
-  
-  
   
   # daily
   noise_ind_daily <- data_N_uid |>
@@ -215,10 +239,19 @@ for(uidx in uids){
   
   }
 
+# store plots
+filename <- sprintf("data processing/noiseplots_outlier_%s.pdf", week_indicator)
+pdf(filename,
+    width = 8, height = 3)
+for (p in plots) {
+  print(p)
+}
+dev.off()
 
-write_csv(noise_data_hourly, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_hourly_data_clean.csv"))
-write_csv(noise_data_daily, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_daily_data_clean.csv"))
-write_csv(noise_data_weekly, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_weekly_data_clean.csv"))
-
+# 
+# write_csv(noise_data_hourly, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_hourly_data_clean.csv"))
+# write_csv(noise_data_daily, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_daily_data_clean.csv"))
+# write_csv(noise_data_weekly, paste0("/Volumes/FS/_ISPM/CCH/Actual_Project/data/Participants/", week_indicator, "/", week_indicator, "_NS_indicators_weekly_data_clean.csv"))
+# 
 
 
