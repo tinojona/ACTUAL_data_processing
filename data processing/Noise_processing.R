@@ -191,47 +191,79 @@ for(uidx in uids){
     mutate(uid = uidx)
   
   
-  
-  
-  
   # weekly
   noise_ind_weekly <- data_N_uid |>
-    summarize(
+    mutate(
+      energy = 10^(0.1 * NS)
+    )|>
+    summarize( 
       
-      # A-weighted equivalent continuous daily sound levels L_Aeq_24h
-      L_Aeq = 10 * log10( mean(10^(0.1 * NS), na.rm = TRUE ) ),
+      # -------------------------
+      # L_Aeq
+      # -------------------------
+      L_Aeq = 10 * log10(mean(energy, na.rm = TRUE)),
       
-      # A-weighted equivalent continuous daytime sound levels between 6-22h L_Aeq_day
-      L_Aeq_day = 10 * log10( mean(10^(0.1 * NS[hour >= 6 & hour < 22]), na.rm = TRUE ) ),
+      # -------------------------
+      # IR 24h
+      # -------------------------
+      IR_24h = {
+        Ltot <- 10 * log10(mean(energy, na.rm = TRUE))
+        K <- Ltot + 3
+        
+        idx <- NS >= K
+        sum(energy[idx], na.rm = TRUE) / sum(energy, na.rm = TRUE)
+      },
       
-      # A-weighted equivalent continuous nighttime sound levels 22-6 L_Aeq_night
-      L_Aeq_night = 10 * log10( mean(10^(0.1 * NS[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
+      # -------------------------
+      # IR day
+      # -------------------------
+      IR_day = {
+        sel <- hour >= 6 & hour < 22
+        
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
       
-      # Daily intermittency ratio IR_24h
-      IR = (10^(0.1 * L_Aeq) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
+      # -------------------------
+      # IR night
+      # -------------------------
+      IR_night = {
+        sel <- hour < 6 | hour >= 22
+        
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
       
-      # daytime intermittency ratio between 6-22 IR_day
-      IR_day = (10^(0.1 * L_Aeq_day) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-      
-      # nighttime intermittency ratio between 6-22 IR_night
-      IR_night = (10^(0.1 * L_Aeq_night) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-      
-      # variables for L_den
-      L_den_day = 10 * log10( mean(10^(0.1 * NS[hour >= 6 & hour < 18]), na.rm = TRUE ) ),
-      L_den_eve = 10 * log10( mean(10^(0.1 * NS[hour >= 18 & hour < 22]), na.rm = TRUE ) ),
-      L_den_nig = 10 * log10( mean(10^(0.1 * NS[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
-      
+      # -------------------------
       # L_den
-      L_den = 10 * log10( (1/24) * 
-                            (12 * 10^( L_den_day /10) +
-                               4 * 10^( (L_den_eve + 5 ) /10) +
-                               8 * 10^( (L_den_nig + 10 ) /10))),
-      .groups = "drop") |>
-    
+      # -------------------------
+      L_den_day = 10 * log10(mean(energy[hour >= 6 & hour < 18], na.rm = TRUE)),
+      L_den_eve = 10 * log10(mean(energy[hour >= 18 & hour < 22], na.rm = TRUE)),
+      L_den_nig = 10 * log10(mean(energy[hour < 6 | hour >= 22], na.rm = TRUE)),
+      
+      L_den = 10 * log10(
+        (1/24) *
+          (12 * 10^(L_den_day / 10) +
+             4  * 10^((L_den_eve + 5) / 10) +
+             8  * 10^((L_den_nig + 10) / 10))
+      ),
+      
+      .groups = "drop"
+    ) |>
     mutate(uid = uidx)
-  
-  
-  
+
   noise_data_hourly <- rbind(noise_data_hourly, noise_ind_hourly)
   noise_data_daily <- rbind(noise_data_daily, noise_ind_daily)
   noise_data_weekly <- rbind(noise_data_weekly, noise_ind_weekly)
