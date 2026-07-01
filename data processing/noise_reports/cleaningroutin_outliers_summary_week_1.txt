@@ -1,0 +1,444 @@
+[1] "ACT001D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 2 
+[1] 0.0004458315
+Percentage missing values (weekly) after removing outliers: 0.0004458315 
+Dropped hourly values based on Tuckey's plots (Laqe): 0 
+Dropped observations based on Tuckey's plots (Laqe): 0 
+Dropped hourly values based on Tuckey's plots (IR): 2 
+Dropped observations based on Tuckey's plots (IR): 106 
+[1] "ACT002R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 7 
+[1] 0.001215278
+Percentage missing values (weekly) after removing outliers: 0.001215278 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT003C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 19 
+[1] 0.003298611
+Percentage missing values (weekly) after removing outliers: 0.003298611 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT004S"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 51 
+[1] 0.008854167
+Percentage missing values (weekly) after removing outliers: 0.008854167 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT005M"
+[1] "ACT006V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 10 
+[1] 0.002225684
+Percentage missing values (weekly) after removing outliers: 0.002225684 
+Dropped hourly values based on Tuckey's plots (Laqe): 1 
+Dropped observations based on Tuckey's plots (Laqe): 53 
+Dropped hourly values based on Tuckey's plots (IR): 0 
+Dropped observations based on Tuckey's plots (IR): 0 
+[1] "ACT007O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 11 
+[1] 0.001909722
+Percentage missing values (weekly) after removing outliers: 0.001909722 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT008U"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 17 
+[1] 0.002951389
+Percentage missing values (weekly) after removing outliers: 0.002951389 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT009H"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 24 
+[1] 0.004166667
+Percentage missing values (weekly) after removing outliers: 0.004166667 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT010Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 36 
+[1] 0.00625
+Percentage missing values (weekly) after removing outliers: 0.00625 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT011X"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT012W"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 12 
+[1] 0.002083333
+Percentage missing values (weekly) after removing outliers: 0.002083333 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT013C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 8 
+[1] 0.001388889
+Percentage missing values (weekly) after removing outliers: 0.001388889 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT014F"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 10 
+Dropped observations based on Tuckey's plots (IR): 600 
+[1] "ACT015Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 1 
+Dropped observations based on Tuckey's plots (Laqe): 60 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT016N"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 59 
+[1] 0.01024306
+Percentage missing values (weekly) after removing outliers: 0.01024306 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT017P"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT018T"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 13 
+[1] 0.002256944
+Percentage missing values (weekly) after removing outliers: 0.002256944 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT019Y"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 6 
+[1] 0.001041667
+Percentage missing values (weekly) after removing outliers: 0.001041667 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT020A"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 15 
+[1] 0.002604167
+Percentage missing values (weekly) after removing outliers: 0.002604167 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT021O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 11 
+[1] 0.001909722
+Percentage missing values (weekly) after removing outliers: 0.001909722 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observatiRStudioGD 
+        2 
+RStudioGD 
+        2 
+RStudioGD 
+        2 
+wrote 2.70kB in  0s, 708.05MB/s                                                                                                                                                                                                          wrote 1.00TB in  0s, 55.19TB/s                                                                                                                                                                                                          wrote 3.46kB in  0s, 1.82GB/swrote 1.00TB in  0s, 3.13PB/s                                                                                                                                                                                                          wrote 3.35kB in  0s, 1.76GB/swrote 1.00TB in  0s, 57.31TB/s                                                                                                                                                                                                          wrote 3.46kB in  0s, 1.21GB/swrote 1.00TB in  0s, 3.09PB/s                                                                                                                                                                                                          indexing week_2_IB_RAW_data_unclean.csv [=====================================================================================----------------------------------------------------------] 1.88TB/s, eta:  0sindexing week_2_IB_RAW_data_unclean.csv [===============================================================================================================================================] 4.98GB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 2.06TB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 7.28GB/s, eta:  0s                                                                                                                                                                                                            wrote 2.69kB in  0s, 664.67MB/s                                                                                                                                                                                                          wrote 1.00TB in  0s, 53.38TB/s                                                                                                                                                                                                          wrote 3.45kB in  0s, 1.11GB/swrote 1.00TB in  0s, 2.05PB/s                                                                                                                                                                                                          wrote 3.34kB in  0s, 1.17GB/swrote 1.00TB in  0s, 55.31TB/s                                                                                                                                                                                                          wrote 3.47kB in  0s, 1.21GB/swrote 1.00TB in  0s, 2.72PB/s                                                                                                                                                                                                          indexing week_3_IB_RAW_data_unclean.csv [======================================================---------------------------------------------------------------------------------------] 947.41GB/s, eta:  0sindexing week_3_IB_RAW_data_unclean.csv [===============================================================================================================================================] 2.67GB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 2.92TB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 2.57GB/s, eta:  0s                                                                                                                                                                                                            wrote 2.59kB in  0s, 904.57MB/s                                                                                                                                                                                                          wrote 1.00TB in  0s, 53.65TB/s                                                                                                                                                                                                          wrote 3.45kB in  0s, 1.81GB/swrote 1.00TB in  0s, 2.82PB/s                                                                                                                                                                                                          wrote 3.22kB in  0s, 2.70GB/swrote 1.00TB in  0s, 53.43TB/s                                                                                                                                                                                                          wrote 3.46kB in  0s, 1.11GB/swrote 1.00TB in  0s, 2.72PB/s                                                                                                                                                                                                          indexing week_4_IB_RAW_data_unclean.csv [=---------------------------------------------------------------------------------------------------------------------------------------------] 39.37GB/s, eta:  0sindexing week_4_IB_RAW_data_unclean.csv [=================================================================================================================----------------------------] 108.33MB/s, eta:  0sindexing week_4_IB_RAW_data_unclean.csv [==============================================================================================================================---------------] 114.86MB/s, eta:  0sindexing week_4_IB_RAW_data_unclean.csv [=========================================================================================================================================----] 119.03MB/s, eta:  0sindexing week_4_IB_RAW_data_unclean.csv [=============================================================================================================================================] 118.87MB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 2.92TB/s, eta:  0s                                                                                                                                                                                                            indexing redcap_all.csv [===============================================================================================================================================================] 6.58GB/s, eta:  0s                                                                                                                                                                                                            wrote 2.65kB in  0s, 924.49MB/s                                                                                                                                                                                                          wrote 1.00TB in  0s, 54.10TB/s                                                                                                                                                                                                          wrote 3.45kB in  0s, 1.81GB/swrote 1.00TB in  0s, 2.83PB/s                                                                                                                                                                                                          wrote 3.29kB in  0s, 656.31MB/s                                                                                                                                                                                                          wrote 1.00TB in  0s, 47.72TB/s                                                                                                                                                                                                          wrote 3.45kB in  0s, 1.21GB/swrote 1.00TB in  0s, 2.97PB/s                                                                                                                                                                                                          s: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT055B"
+[1] "ACT056D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 6 
+[1] 0.001041667
+Percentage missing values (weekly) after removing outliers: 0.001041667 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT057R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 11 
+[1] 0.001909722
+Percentage missing values (weekly) after removing outliers: 0.001909722 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT058G"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 39 
+[1] 0.006770833
+Percentage missing values (weekly) after removing outliers: 0.006770833 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT059Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 9 
+[1] 0.0015625
+Percentage missing values (weekly) after removing outliers: 0.0015625 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT060E"
+[1] "ACT061O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 32 
+[1] 0.005555556
+Percentage missing values (weekly) after removing outliers: 0.005555556 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT062Y"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 20 
+[1] 0.003472222
+Percentage missing values (weekly) after removing outliers: 0.003472222 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT063A"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 26 
+[1] 0.004513889
+Percentage missing values (weekly) after removing outliers: 0.004513889 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT064K"
+[1] NaN
+Percentage missing values (weekly): NaN 
+[1] "ACT065J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 48 
+[1] 0.008333333
+Percentage missing values (weekly) after removing outliers: 0.008333333 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 2 
+Dropped observations based on Tuckey's plots (IR): 120 
+[1] "ACT066Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT067C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 11 
+[1] 0.001909722
+Percentage missing values (weekly) after removing outliers: 0.001909722 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 11 
+Dropped observations based on Tuckey's plots (IR): 660 
+[1] "ACT068H"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 81 
+[1] 0.0140625
+Percentage missing values (weekly) after removing outliers: 0.0140625 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT069W"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 2 
+[1] 0.0003472222
+Percentage missing values (weekly) after removing outliers: 0.0003472222 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT070L"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT071B"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 14 
+[1] 0.002430556
+Percentage missing values (weekly) after removing outliers: 0.002430556 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT072R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 1 
+[1] 0.0001736111
+Percentage missing values (weekly) after removing outliers: 0.0001736111 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT073V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 1 
+[1] 0.0001736111
+Percentage missing values (weekly) after removing outliers: 0.0001736111 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT074Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 8 
+[1] 0.001388889
+Percentage missing values (weekly) after removing outliers: 0.001388889 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT075N"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 24 
+[1] 0.004166667
+Percentage missing values (weekly) after removing outliers: 0.004166667 
+Dropped hourly values based on Tuckey's plots (Laqe): 9 
+Dropped observations based on Tuckey's plots (Laqe): 540 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT076L"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 67 
+[1] 0.01163194
+Percentage missing values (weekly) after removing outliers: 0.01163194 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 10 
+Dropped observations based on Tuckey's plots (IR): 600 
+[1] "ACT077A"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT078F"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 8 
+[1] 0.001388889
+Percentage missing values (weekly) after removing outliers: 0.001388889 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT079J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 9 
+[1] 0.0015625
+Percentage missing values (weekly) after removing outliers: 0.0015625 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT080U"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 48 
+[1] 0.008333333
+Percentage missing values (weekly) after removing outliers: 0.008333333 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 

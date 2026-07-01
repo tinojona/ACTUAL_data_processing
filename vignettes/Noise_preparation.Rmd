@@ -5,6 +5,8 @@ date: "2025-05-09"
 output: html_document
 ---
 
+Amended in July 2026 by Apolline Saucy
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -33,8 +35,7 @@ week_indicator = "week_1"
 
 # load redcap from CCH
   # iButton and Noise data
-  data <- read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data-raw/Participants/week1_IB_RAW_data_unclean.csv")
-  
+  data <- read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data-raw/Participants/week_1_IB_RAW_data_unclean.csv")
   # REDCap for uids and start and end times
   redcap = read_csv("/Volumes/FS/_ISPM/CCH/Actual_Project/data/App_Personal_Data_Screening/redcap_all.csv")
   
@@ -175,79 +176,174 @@ ggplot(noise_ind_hourly, aes(y = L_Aeq_1h, x = 1:length(L_Aeq_1h))) +
 noise_ind_daily <- data_N_001 |>
   group_by(dow) |>
   
-  summarize(
+      mutate(
+      energy = 10^(0.1 * NS) # work on energy level (linear) before going back to decibel scale
+    )|>
+    summarize( 
+      
+      # LAeq --------------------
+      L_Aeq_tot = 10 * log10(mean(energy, na.rm = TRUE)),
+      L_Aeq_day = 10 * log10(mean(energy[hour >= 6 & hour < 22], na.rm = TRUE)),
+      L_Aeq_night = 10 * log10(mean(energy[hour < 6 | hour >= 22], na.rm = TRUE)),
+      
+      # IR 24h --------------------
+      IR_24h = {
+        Ltot <- 10 * log10(mean(energy, na.rm = TRUE))
+        K <- Ltot + 3 # threshold is average sound level + 3
+        idx <- NS >= K # identify observations which overpass threshold K
+        sum(energy[idx], na.rm = TRUE) / sum(energy, na.rm = TRUE) # IR is the proportion of overall energy of the events to the overall weekly energy
+      },
     
-    # A-weighted equivalent continuous daily sound levels L_Aeq_24h
-    L_Aeq_24h = 10 * log10( mean(10^(0.1 * NS_clean), na.rm = TRUE ) ),
-    
-    # A-weighted equivalent continuous daytime sound levels between 6-22h L_Aeq_day
-    L_Aeq_day = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 6 & hour < 22]), na.rm = TRUE ) ),
-    
-    # A-weighted equivalent continuous nighttime sound levels 22-6 L_Aeq_night
-    L_Aeq_night = 10 * log10( mean(10^(0.1 * NS_clean[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
-    
-    # Daily intermittency ratio IR_24h
-    IR_24h = (10^(0.1 * L_Aeq_24h) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # daytime intermittency ratio between 6-22 IR_day
-    IR_day = (10^(0.1 * L_Aeq_day) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # nighttime intermittency ratio between 6-22 IR_night
-    IR_night = (10^(0.1 * L_Aeq_night) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # variables for L_den
-    L_den_day = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 6 & hour < 18]), na.rm = TRUE ) ),
-    L_den_eve = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 18 & hour < 22]), na.rm = TRUE ) ),
-    L_den_nig = 10 * log10( mean(10^(0.1 * NS_clean[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
-    
-    # L_den
-    L_den = 10 * log10( (1/24) * 
-                          (12 * 10^( L_den_day /10) +
-                             4 * 10^( (L_den_eve + 5 ) /10) +
-                             8 * 10^( (L_den_nig + 10 ) /10))),
-    .groups = "drop")
-
+      # IR day ------------------
+      IR_day = {
+        sel <- hour >= 6 & hour < 22
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
+      
+      # IR night ------------------
+      IR_night = {
+        sel <- hour < 6 | hour >= 22
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
+      
+      # L_den ------------------
+      L_den_day = 10 * log10(mean(energy[hour >= 6 & hour < 18], na.rm = TRUE)),
+      L_den_eve = 10 * log10(mean(energy[hour >= 18 & hour < 22], na.rm = TRUE)),
+      L_den_nig = 10 * log10(mean(energy[hour < 6 | hour >= 22], na.rm = TRUE)),
+      
+      L_den = 10 * log10(
+        (1/24) *
+          (12 * 10^(L_den_day / 10) +
+             4  * 10^((L_den_eve + 5) / 10) +
+             8  * 10^((L_den_nig + 10) / 10))
+      ),
+      
+      .groups = "drop"
+)
 
 
 # weekly data frame
 noise_ind_weekly <- data_N_001 |>
-  summarize(
+      mutate(
+      energy = 10^(0.1 * NS) # work on energy level (linear) before going back to decibel scale
+    )|>
+    summarize( 
+      
+      # LAeq --------------------
+      L_Aeq_tot = 10 * log10(mean(energy, na.rm = TRUE)),
+      L_Aeq_day = 10 * log10(mean(energy[hour >= 6 & hour < 22], na.rm = TRUE)),
+      L_Aeq_night = 10 * log10(mean(energy[hour < 6 | hour >= 22], na.rm = TRUE)),
+      
+      # IR 24h --------------------
+      IR_24h = {
+        Ltot <- 10 * log10(mean(energy, na.rm = TRUE))
+        K <- Ltot + 3 # threshold is average sound level + 3
+        idx <- NS >= K # identify observations which overpass threshold K
+        sum(energy[idx], na.rm = TRUE) / sum(energy, na.rm = TRUE) # IR is the proportion of overall energy of the events to the overall weekly energy
+      },
     
-    # A-weighted equivalent continuous daily sound levels L_Aeq_24h
-    L_Aeq = 10 * log10( mean(10^(0.1 * NS_clean), na.rm = TRUE ) ),
-    
-    # A-weighted equivalent continuous daytime sound levels between 6-22h L_Aeq_day
-    L_Aeq_day = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 6 & hour < 22]), na.rm = TRUE ) ),
-    
-    # A-weighted equivalent continuous nighttime sound levels 22-6 L_Aeq_night
-    L_Aeq_night = 10 * log10( mean(10^(0.1 * NS_clean[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
-    
-    # Daily intermittency ratio IR_24h
-    IR = (10^(0.1 * L_Aeq) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # daytime intermittency ratio between 6-22 IR_day
-    IR_day = (10^(0.1 * L_Aeq_day) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # nighttime intermittency ratio between 6-22 IR_night
-    IR_night = (10^(0.1 * L_Aeq_night) ) / (10^(0.1 * L_Aeq_tot) ) * 100,
-    
-    # variables for L_den
-    L_den_day = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 6 & hour < 18]), na.rm = TRUE ) ),
-    L_den_eve = 10 * log10( mean(10^(0.1 * NS_clean[hour >= 18 & hour < 22]), na.rm = TRUE ) ),
-    L_den_nig = 10 * log10( mean(10^(0.1 * NS_clean[hour < 6 | hour >= 22]), na.rm = TRUE ) ),
-    
-    # L_den
-    L_den = 10 * log10( (1/24) * 
-                          (12 * 10^( L_den_day /10) +
-                             4 * 10^( (L_den_eve + 5 ) /10) +
-                             8 * 10^( (L_den_nig + 10 ) /10))),
-    .groups = "drop")
+      # IR day ------------------
+      IR_day = {
+        sel <- hour >= 6 & hour < 22
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
+      
+      # IR night ------------------
+      IR_night = {
+        sel <- hour < 6 | hour >= 22
+        x_energy <- energy[sel]
+        x_NS <- NS[sel]
+        Ltot <- 10 * log10(mean(x_energy, na.rm = TRUE))
+        K <- Ltot + 3
+        idx <- x_NS >= K
+        sum(x_energy[idx], na.rm = TRUE) / sum(x_energy, na.rm = TRUE)
+      },
+      
+      # L_den ------------------
+      L_den_day = 10 * log10(mean(energy[hour >= 6 & hour < 18], na.rm = TRUE)),
+      L_den_eve = 10 * log10(mean(energy[hour >= 18 & hour < 22], na.rm = TRUE)),
+      L_den_nig = 10 * log10(mean(energy[hour < 6 | hour >= 22], na.rm = TRUE)),
+      
+      L_den = 10 * log10(
+        (1/24) *
+          (12 * 10^(L_den_day / 10) +
+             4  * 10^((L_den_eve + 5) / 10) +
+             8  * 10^((L_den_nig + 10) / 10))
+      ),
+      
+      .groups = "drop"
+    )
+```
+
+
+##### 3) Additional cleaning step: clean hourly averages {.tabset}
+Hourly averages (LAeq_hourly and IR_hourly) were visualized for each individual and monitoring week (Tuckey plots). Hourly values that exceeded 1.5*IQR of the distribution for a specific hour of the day within each monitoring week was excluded. This was done to eliminate extreme values that may not be representative of long- to mid-term community noise exposure at a given location and time.
+
+###### "simple outlier exclusion 
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+library(pdftools)
+show_pdf_firstpage <- function(pdf, pages = 1:5) {
+
+  tmp <- tempfile(fileext = ".pdf")
+
+  pdftools::pdf_subset(
+    pdf,
+    pages = pages,
+    output = tmp
+  )
+
+  # IMPORTANT: use embed, not iframe
+  htmltools::browsable(
+    htmltools::tags$embed(
+      src = tmp,
+      type = "application/pdf",
+      width = "100%",
+      height = "650px"
+    )
+  )
+}
+```
+
+
+```{r echo=FALSE, out.width="100%"}
+show_pdf_firstpage(
+    "../data processing/noise_reports/noiseplots_outlier_week_2.pdf",
+  pages = 1:3
+)
+
+```
+
+###### 1h Tuckey IQR exclusion
+
+
+```{r echo=FALSE, out.width="100%"}
+show_pdf_firstpage(
+    "../data processing/noise_reports/noiseplots_outlier_corrected_LAeqweek_2.pdf",
+  pages = 1:3
+)
+
 ```
 
 
 ```{r 2a daily plots, echo=FALSE, fig.height=3, fig.width=8, fig.align='center'}
 ggplot(data = noise_ind_daily, aes(x = dow)) +
-  geom_line(aes(y = L_Aeq_24h, color = "L_Aeq 24h")) +
+  geom_line(aes(y = L_Aeq_tot, color = "L_Aeq 24h")) +
   geom_line(aes(y = L_Aeq_day, color = "L_Aeq day")) +
   geom_line(aes(y = L_Aeq_night, color = "L_Aeq night"))  +
   geom_line(aes(y = L_den, color = "L_den")) +
@@ -278,9 +374,9 @@ ggplot(data = noise_ind_daily, aes(x = dow)) +
 
 
 
-#### Next steps:
+#### Summary
 
-- loop through all the participants and rbind the 3 datasets and save them on data/participants/week1
+This cleaning protocol has been completed and replicated throughout all 4 monitoring weeks.
 
 
 <br>
