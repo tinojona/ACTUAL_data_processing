@@ -1,0 +1,744 @@
+[1] "ACT001D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 36 
+[1] 0.00625
+Percentage missing values (weekly) after removing outliers: 0.00625 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT002R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 41 
+[1] 0.007118056
+Percentage missing values (weekly) after removing outliers: 0.007118056 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT003C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 27 
+[1] 0.0046875
+Percentage missing values (weekly) after removing outliers: 0.0046875 
+Dropped hourly values based on Tuckey's plots (Laqe): 9 
+Dropped observations based on Tuckey's plots (Laqe): 540 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT004S"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 22 
+[1] 0.003819444
+Percentage missing values (weekly) after removing outliers: 0.003819444 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT005M"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 47 
+[1] 0.008159722
+Percentage missing values (weekly) after removing outliers: 0.008159722 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT006V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 19 
+[1] 0.003298611
+Percentage missing values (weekly) after removing outliers: 0.003298611 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT007O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 47 
+[1] 0.008159722
+Percentage missing values (weekly) after removing outliers: 0.008159722 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT008U"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 26 
+[1] 0.004513889
+Percentage missing values (weekly) after removing outliers: 0.004513889 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 10 
+Dropped observations based on Tuckey's plots (IR): 600 
+[1] "ACT009H"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 96 
+[1] 0.01666667
+Percentage missing values (weekly) after removing outliers: 0.01666667 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 10 
+Dropped observations based on Tuckey's plots (IR): 600 
+[1] "ACT010Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 35 
+[1] 0.006076389
+Percentage missing values (weekly) after removing outliers: 0.006076389 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT011X"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 52 
+[1] 0.01072386
+Percentage missing values (weekly) after removing outliers: 0.01072386 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT012W"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 37 
+[1] 0.006423611
+Percentage missing values (weekly) after removing outliers: 0.006423611 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT013C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 32 
+[1] 0.005555556
+Percentage missing values (weekly) after removing outliers: 0.005555556 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT014F"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 2 
+[1] 0.0003472222
+Percentage missing values (weekly) after removing outliers: 0.0003472222 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT015Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 42 
+[1] 0.007291667
+Percentage missing values (weekly) after removing outliers: 0.007291667 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT016N"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 18 
+[1] 0.003125
+Percentage missing values (weekly) after removing outliers: 0.003125 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT017P"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 112 
+[1] 0.01944444
+Percentage missing values (weekly) after removing outliers: 0.01944444 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT018T"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 26 
+[1] 0.004513889
+Percentage missing values (weekly) after removing outliers: 0.004513889 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT019Y"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 73 
+[1] 0.01267361
+Percentage missing values (weekly) after removing outliers: 0.01267361 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 2 
+Dropped observations based on Tuckey's plots (IR): 120 
+[1] "ACT020A"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 70 
+[1] 0.01215278
+Percentage missing values (weekly) after removing outliers: 0.01215278 
+Dropped hourly values based on Tuckey's plots (Laqe): 2 
+Dropped observations based on Tuckey's plots (Laqe): 120 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT021O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 3 
+[1] 0.0005208333
+Percentage missing values (weekly) after removing outliers: 0.0005208333 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT022P"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 2 
+[1] 0.0003472222
+Percentage missing values (weekly) after removing outliers: 0.0003472222 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT023X"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 8 
+[1] 0.001388889
+Percentage missing values (weekly) after removing outliers: 0.001388889 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT024G"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT025K"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 30 
+[1] 0.005208333
+Percentage missing values (weekly) after removing outliers: 0.005208333 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT026T"
+[1] NaN
+Percentage missing values (weekly): NaN 
+[1] "ACT027P"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 55 
+[1] 0.009548611
+Percentage missing values (weekly) after removing outliers: 0.009548611 
+Dropped hourly values based on Tuckey's plots (Laqe): 9 
+Dropped observations based on Tuckey's plots (Laqe): 540 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT028W"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 12 
+[1] 0.002083333
+Percentage missing values (weekly) after removing outliers: 0.002083333 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT030M"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 46 
+[1] 0.007986111
+Percentage missing values (weekly) after removing outliers: 0.007986111 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT031S"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 7 
+[1] 0.001215278
+Percentage missing values (weekly) after removing outliers: 0.001215278 
+Dropped hourly values based on Tuckey's plots (Laqe): 12 
+Dropped observations based on Tuckey's plots (Laqe): 720 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT032V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 11 
+[1] 0.001909722
+Percentage missing values (weekly) after removing outliers: 0.001909722 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT033H"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 1 
+[1] 0.0001736111
+Percentage missing values (weekly) after removing outliers: 0.0001736111 
+Dropped hourly values based on Tuckey's plots (Laqe): 9 
+Dropped observations based on Tuckey's plots (Laqe): 540 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT035F"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 37 
+[1] 0.006423611
+Percentage missing values (weekly) after removing outliers: 0.006423611 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT036J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 57 
+[1] 0.009895833
+Percentage missing values (weekly) after removing outliers: 0.009895833 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT037S"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 43 
+[1] 0.007465278
+Percentage missing values (weekly) after removing outliers: 0.007465278 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT038Y"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 7 
+[1] 0.001215278
+Percentage missing values (weekly) after removing outliers: 0.001215278 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT039Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 102 
+[1] 0.01770833
+Percentage missing values (weekly) after removing outliers: 0.01770833 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT040T"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 69 
+[1] 0.01197917
+Percentage missing values (weekly) after removing outliers: 0.01197917 
+Dropped hourly values based on Tuckey's plots (Laqe): 11 
+Dropped observations based on Tuckey's plots (Laqe): 660 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT041E"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 56 
+[1] 0.009722222
+Percentage missing values (weekly) after removing outliers: 0.009722222 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT042D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 66 
+[1] 0.01145833
+Percentage missing values (weekly) after removing outliers: 0.01145833 
+Dropped hourly values based on Tuckey's plots (Laqe): 3 
+Dropped observations based on Tuckey's plots (Laqe): 180 
+Dropped hourly values based on Tuckey's plots (IR): 12 
+Dropped observations based on Tuckey's plots (IR): 720 
+[1] "ACT043W"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 104 
+[1] 0.01805556
+Percentage missing values (weekly) after removing outliers: 0.01805556 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 6 
+Dropped observations based on Tuckey's plots (IR): 360 
+[1] "ACT044Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 0 
+[1] 0
+Percentage missing values (weekly) after removing outliers: 0 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 2 
+Dropped observations based on Tuckey's plots (IR): 120 
+[1] "ACT046N"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 14 
+[1] 0.002430556
+Percentage missing values (weekly) after removing outliers: 0.002430556 
+Dropped hourly values based on Tuckey's plots (Laqe): 11 
+Dropped observations based on Tuckey's plots (Laqe): 660 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT047Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 15 
+[1] 0.002604167
+Percentage missing values (weekly) after removing outliers: 0.002604167 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT049X"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 21 
+[1] 0.003645833
+Percentage missing values (weekly) after removing outliers: 0.003645833 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT050K"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 60 
+[1] 0.01041667
+Percentage missing values (weekly) after removing outliers: 0.01041667 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT052P"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 2 
+[1] 0.0003472222
+Percentage missing values (weekly) after removing outliers: 0.0003472222 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT053J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 38 
+[1] 0.006597222
+Percentage missing values (weekly) after removing outliers: 0.006597222 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 14 
+Dropped observations based on Tuckey's plots (IR): 840 
+[1] "ACT054D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 35 
+[1] 0.006076389
+Percentage missing values (weekly) after removing outliers: 0.006076389 
+Dropped hourly values based on Tuckey's plots (Laqe): 11 
+Dropped observations based on Tuckey's plots (Laqe): 660 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT055B"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 18 
+[1] 0.003125
+Percentage missing values (weekly) after removing outliers: 0.003125 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT056D"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 15 
+[1] 0.002604167
+Percentage missing values (weekly) after removing outliers: 0.002604167 
+Dropped hourly values based on Tuckey's plots (Laqe): 10 
+Dropped observations based on Tuckey's plots (Laqe): 600 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT057R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 82 
+[1] 0.01423611
+Percentage missing values (weekly) after removing outliers: 0.01423611 
+Dropped hourly values based on Tuckey's plots (Laqe): 9 
+Dropped observations based on Tuckey's plots (Laqe): 540 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT058G"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 95 
+[1] 0.01649306
+Percentage missing values (weekly) after removing outliers: 0.01649306 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT059Z"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 5 
+[1] 0.0008680556
+Percentage missing values (weekly) after removing outliers: 0.0008680556 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT061O"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 67 
+[1] 0.01163194
+Percentage missing values (weekly) after removing outliers: 0.01163194 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT062Y"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 41 
+[1] 0.007118056
+Percentage missing values (weekly) after removing outliers: 0.007118056 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT063A"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 4 
+[1] 0.0006944444
+Percentage missing values (weekly) after removing outliers: 0.0006944444 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT064K"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 60 
+[1] 0.01041667
+Percentage missing values (weekly) after removing outliers: 0.01041667 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT065J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 36 
+[1] 0.00625
+Percentage missing values (weekly) after removing outliers: 0.00625 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT066Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 1 
+[1] 0.0001736111
+Percentage missing values (weekly) after removing outliers: 0.0001736111 
+Dropped hourly values based on Tuckey's plots (Laqe): 1 
+Dropped observations based on Tuckey's plots (Laqe): 60 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT067C"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 9 
+[1] 0.0015625
+Percentage missing values (weekly) after removing outliers: 0.0015625 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT068H"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 119 
+[1] 0.02065972
+Percentage missing values (weekly) after removing outliers: 0.02065972 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT070L"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 13 
+[1] 0.002256944
+Percentage missing values (weekly) after removing outliers: 0.002256944 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT071B"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 31 
+[1] 0.005381944
+Percentage missing values (weekly) after removing outliers: 0.005381944 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 3 
+Dropped observations based on Tuckey's plots (IR): 180 
+[1] "ACT072R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 43 
+[1] 0.007465278
+Percentage missing values (weekly) after removing outliers: 0.007465278 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT073V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 38 
+[1] 0.006597222
+Percentage missing values (weekly) after removing outliers: 0.006597222 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 9 
+Dropped observations based on Tuckey's plots (IR): 540 
+[1] "ACT074Q"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 19 
+[1] 0.003298611
+Percentage missing values (weekly) after removing outliers: 0.003298611 
+Dropped hourly values based on Tuckey's plots (Laqe): 8 
+Dropped observations based on Tuckey's plots (Laqe): 480 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT075N"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 31 
+[1] 0.005381944
+Percentage missing values (weekly) after removing outliers: 0.005381944 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
+[1] "ACT076L"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 127 
+[1] 0.02204861
+Percentage missing values (weekly) after removing outliers: 0.02204861 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 4 
+Dropped observations based on Tuckey's plots (IR): 240 
+[1] "ACT077A"
+[1] "ACT078F"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 66 
+[1] 0.01145833
+Percentage missing values (weekly) after removing outliers: 0.01145833 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT079J"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 34 
+[1] 0.005902778
+Percentage missing values (weekly) after removing outliers: 0.005902778 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 5 
+Dropped observations based on Tuckey's plots (IR): 300 
+[1] "ACT080U"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 4 
+[1] 0.0006944444
+Percentage missing values (weekly) after removing outliers: 0.0006944444 
+Dropped hourly values based on Tuckey's plots (Laqe): 4 
+Dropped observations based on Tuckey's plots (Laqe): 240 
+Dropped hourly values based on Tuckey's plots (IR): 2 
+Dropped observations based on Tuckey's plots (IR): 120 
+[1] "ACT081E"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 57 
+[1] 0.009895833
+Percentage missing values (weekly) after removing outliers: 0.009895833 
+Dropped hourly values based on Tuckey's plots (Laqe): 7 
+Dropped observations based on Tuckey's plots (Laqe): 420 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT082R"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 34 
+[1] 0.005902778
+Percentage missing values (weekly) after removing outliers: 0.005902778 
+Dropped hourly values based on Tuckey's plots (Laqe): 6 
+Dropped observations based on Tuckey's plots (Laqe): 360 
+Dropped hourly values based on Tuckey's plots (IR): 8 
+Dropped observations based on Tuckey's plots (IR): 480 
+[1] "ACT083V"
+[1] 0
+Percentage missing values (weekly): 0 
+Dropped observations: 106 
+[1] 0.01840278
+Percentage missing values (weekly) after removing outliers: 0.01840278 
+Dropped hourly values based on Tuckey's plots (Laqe): 5 
+Dropped observations based on Tuckey's plots (Laqe): 300 
+Dropped hourly values based on Tuckey's plots (IR): 7 
+Dropped observations based on Tuckey's plots (IR): 420 
